@@ -1,48 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ekant Spotify Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #1db954; /* Spotify green */
-            color: white;
-        }
-        h1 {
-            margin-bottom: 50px;
-        }
-        #login-btn {
-            background-color: white;
-            color: #1db954;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        #login-btn:hover {
-            background-color: #1ed760;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Login - Ekant</title>
 </head>
 <body>
-    <h1>Login with Spotify</h1>
-    <button id="login-btn">Login</button>
+  <h1>Login with Spotify</h1>
+  <button id="login-btn">Login</button>
 
-    <script>
-        const client_id = "f7c4febcd8194338a16278f8bd431c15"; // তোমার Spotify Client ID
-        const redirect_uri = "https://realshibsankarsarkar.github.io/Ekant/callback.html";
-        const scopes = "user-read-private user-read-email";
-
-        document.getElementById("login-btn").onclick = () => {
-            const auth_url = `https://accounts.spotify.com/authorize?response_type=token&client_id=${client_id}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirect_uri)}`;
-            window.location = auth_url;
-        };
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
